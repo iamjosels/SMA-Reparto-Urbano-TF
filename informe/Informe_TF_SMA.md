@@ -86,6 +86,8 @@ Tabla de contenidos
 [4.7 Interpretación general de los resultados	19](#_p2dgwg3vpi8d)
 
 [**5. Conclusiones	19**](#_nxc0nxnimraq)
+
+[**6. Repositorio	20**](#_nxc0nxnimasd)
 ##
 ##
 ##
@@ -466,6 +468,9 @@ Como líneas de mejora, se identifican oportunidades relevantes:
    ` `Ajustar la dificultad del entorno permitiría analizar la sensibilidad del sistema frente a restricciones temporales.
 
 En conjunto, el trabajo permitió aplicar conceptos fundamentales de agentes inteligentes, comunicación y cooperación, mostrando cómo un SMA puede enfrentar problemas complejos sin depender de un controlador centralizado. El prototipo cumple con los objetivos planteados y sienta las bases para futuras mejoras y experimentación.
+
+# <a name="_nxc0nxnimasd"></a>**6. Repositorio**
+https://github.com/iamjosels/SMA-Reparto-Urbano-TF
 
 [ref1]: imagenes/Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.010.png
 [ref2]: imagenes/Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.015.png
