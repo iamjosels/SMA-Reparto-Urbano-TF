@@ -1,4 +1,4 @@
-# 🧠 Sistema Multiagente para Reparto Urbano con Ventanas de Tiempo  
+# Sistema Multiagente para Reparto Urbano con Ventanas de Tiempo  
 ### Trabajo Final – Tópicos en Ciencias de la Computación (CST)
 
 Este proyecto implementa un **Sistema Multiagente (SMA)** para la simulación de un escenario de reparto urbano.  
@@ -14,7 +14,7 @@ El entorno genera pedidos dinámicamente, gestiona adjudicaciones y supervisa el
 El sistema evidencia comportamiento emergente propio de los SMA.
 
 ---
-
+```
 # 📂 Estructura del Repositorio
 
 SMA-Reparto-Urbano-TF/
@@ -31,7 +31,7 @@ SMA-Reparto-Urbano-TF/
 └── README.md
 
 ---
-
+```
 # ⚙️ Tecnologías Utilizadas
 
 - Python 3.10+
