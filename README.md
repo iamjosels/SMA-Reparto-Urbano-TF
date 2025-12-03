@@ -30,8 +30,9 @@ SMA-Reparto-Urbano-TF/
 │
 └── README.md
 
----
 ```
+---
+
 # ⚙️ Tecnologías Utilizadas
 
 - Python 3.10+
@@ -54,5 +55,14 @@ SMA-Reparto-Urbano-TF/
    - Gráficos de distribución  
    - Estado final del mapa  
    - Animación paso a paso 
+
+---
+
+## 👥 Autores
+
+| Nombre                               | Rol                         |
+|--------------------------------------|------------------------------|
+| **José Giovanni Laura Silvera**      | Desarrollo / Notebook / Informe |
+| **Christian Joel Cutipa Cañapataña** | Desarrollo / Informe |
 
 ---
