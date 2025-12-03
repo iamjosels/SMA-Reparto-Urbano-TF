@@ -6,7 +6,7 @@
 
 **DE CIENCIAS DE LA COMPUTACIÓN**
 
-![Imagen relacionada](Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.001.png)
+![Imagen relacionada](imagenes/Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.001.png)
 
 <a name="_49x11dwj3c6j"></a>**TÓPICOS DE CIENCIAS DE LA COMPUTACIÓN**
 
@@ -229,13 +229,13 @@ Para simular un entorno urbano simplificado, se utilizó un mapa discreto bidime
 
 Como se observa en la siguiente captura, la clase Pedido define los atributos esenciales para representar la ubicación y ventana de tiempo de cada entrega.
 
-Esta estructura permite modelar pedidos realistas con restricciones temporales similares al VRP–TW.![](Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.002.png)
+Esta estructura permite modelar pedidos realistas con restricciones temporales similares al VRP–TW.![](imagenes/Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.002.png)
 ## <a name="_l5mqa455n8mi"></a>**3.2 Preparación de modelos** 
 El sistema utiliza cuatro entidades principales: el **agente repartidor**, el **entorno**, los **pedidos** y los **mensajes**. A continuación se describe la función de cada una.
 ### <a name="_dxenhpz2stcr"></a>**3.2.1 Clase Message: comunicación entre agentes**
 El intercambio de mensajes es esencial para coordinar asignaciones y transferencias.
 
-En la figura siguiente se muestra la implementación de la clase Message, utilizada para la comunicación estructurada entre agentes.![](Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.003.png)
+En la figura siguiente se muestra la implementación de la clase Message, utilizada para la comunicación estructurada entre agentes.![](imagenes/Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.003.png)
 
 La clase contiene:
 
@@ -252,11 +252,11 @@ Los repartidores funcionan como agentes inteligentes que:
 - transfieren carga cuando es necesario,
 - se desplazan paso a paso en el grid.
 
-Muestra el método evaluate\_order(), responsable de verificar si un agente puede entregar un pedido antes de su tiempo límite.![](Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.004.png)
+Muestra el método evaluate\_order(), responsable de verificar si un agente puede entregar un pedido antes de su tiempo límite.![](imagenes/Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.004.png)
 
 Asimismo:
 
-Se presenta la función step\_movement(), que controla el desplazamiento del agente hacia el pedido activo.![](Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.005.png)
+Se presenta la función step\_movement(), que controla el desplazamiento del agente hacia el pedido activo.![](imagenes/Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.005.png)
 
 Esta separación de responsabilidades permite simular decisiones racionales basadas en estados internos y restricciones temporales.
 ### <a name="_jk2xj0mnjywb"></a>**3.2.3 Clase Entorno: gestión global y supervisión**
@@ -270,12 +270,12 @@ El entorno supervisa el funcionamiento general:
 - avanza el tiempo y registra entregas.
 
 En la siguiente imagen se observa el método step(), que implementa el ciclo principal del entorno: procesamiento de mensajes, asignación, rebalanceo y movimiento.\
-*![](Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.006.png)![](Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.007.png)*
+*![](imagenes/Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.006.png)![](imagenes/Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.007.png)*
 
 También es responsable de la lógica de balanceo dinámico:
 
 Se aprecia el método try\_rebalance\_load(), que habilita el intercambio de pedidos entre agentes cuando se detecta desbalance de carga.\
-![](Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.008.png)
+![](imagenes/Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.008.png)
 ## <a name="_cja82vro84rw"></a>**3.3 Implementación del prototipo**
 El prototipo fue implementado en un notebook Python (.ipynb) utilizando:
 
@@ -305,7 +305,7 @@ Se realizaron pruebas con tres agentes y un máximo de 20 pedidos generados din�
 Durante la simulación se registraron logs para analizar el comportamiento interno:
 
 La siguiente captura muestra un extracto del log del agente A1, donde se evidencian decisiones como rechazos por ventana, propuestas generadas y participación en transferencias.*\
-` `![](Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.009.png)
+` `![](imagenes/Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.009.png)
 
 Finalmente, para validar visualmente el comportamiento emergente:
 
@@ -325,7 +325,7 @@ Se presenta la gráfica del estado final del mapa, donde los pedidos entregados 
 Además, se creó una animación para visualizar el movimiento paso a paso:
 
 La Figura correspondiente muestra un fotograma representativo de la animación de 80 ticks, donde puede observarse el desplazamiento de los agentes y la aparición de pedidos en tiempo real.\
-*![](Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.011.png)*
+*![](imagenes/Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.011.png)*
 #
 #
 #
@@ -345,7 +345,7 @@ Durante la ejecución principal del modelo, se registraron las siguientes métri
 - **Pedidos vencidos:** 13
 - **Desviación estándar en la distribución de carga:** 0.47
 
-Estos valores reflejan la dificultad del escenario: las ventanas de tiempo relativamente cortas, la distancia entre puntos y la velocidad limitada de los agentes provocan que una parte significativa de pedidos no pueda ser entregada dentro del plazo.![](Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.012.png)
+Estos valores reflejan la dificultad del escenario: las ventanas de tiempo relativamente cortas, la distancia entre puntos y la velocidad limitada de los agentes provocan que una parte significativa de pedidos no pueda ser entregada dentro del plazo.![](imagenes/Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.012.png)
 ##
 ## <a name="_vioz5qi9dvgs"></a><a name="_m5a91w910fm3"></a>**4.2 Distribución de trabajo por agente**
 En esta ejecución:
@@ -359,7 +359,7 @@ Esta distribución es relativamente equilibrada, lo que demuestra que el mecanis
 
 Se muestra el gráfico de barras correspondiente a los pedidos entregados por agente.
 
-![](Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.013.png)
+![](imagenes/Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.013.png)
 
 Además, la desviación estándar de 0.47 confirma cuantitativamente dicho equilibrio.
 ## <a name="_biykz7w6467w"></a>**4.3 Distancia recorrida por agente**
@@ -373,7 +373,7 @@ Los valores son coherentes con la ubicación inicial de los agentes y la distrib
 
 La Figura siguiente muestra el gráfico de distancia recorrida por agente, visualizando la carga física simulada.
 
-![](Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.014.png)
+![](imagenes/Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.014.png)
 ## <a name="_9qap348dre4x"></a>**4.4 Estado final del mapa**
 Una de las salidas visuales más importantes es la representación gráfica de:
 
@@ -401,7 +401,7 @@ El log de eventos es fundamental para validar que los agentes:
 - entregan pedidos y registran correctamente el tick.
 
   En la Figura siguiente se aprecia un extracto del log del agente A1 obtenido durante la ejecución.\
-  ![](Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.016.png)
+  ![](imagenes/Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.016.png)
 
 Este registro evidencia comportamientos clave, como:
 
@@ -420,7 +420,7 @@ Esta animación muestra:
 - comportamiento emergente en tiempo real.
 
   La Figura siguiente muestra un fotograma representativo de la animación, donde pueden observarse la posición de cada agente y los pedidos presentes en el entorno en ese tick.\
-  ![](Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.017.png)
+  ![](imagenes/Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.017.png)
 
 Esta representación ayuda a comprender la evolución temporal del sistema y la interacción entre agentes.
 ## <a name="_p2dgwg3vpi8d"></a>**4.7 Interpretación general de los resultados**
@@ -467,5 +467,5 @@ Como líneas de mejora, se identifican oportunidades relevantes:
 
 En conjunto, el trabajo permitió aplicar conceptos fundamentales de agentes inteligentes, comunicación y cooperación, mostrando cómo un SMA puede enfrentar problemas complejos sin depender de un controlador centralizado. El prototipo cumple con los objetivos planteados y sienta las bases para futuras mejoras y experimentación.
 
-[ref1]: Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.010.png
-[ref2]: Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.015.png
+[ref1]: imagenes/Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.010.png
+[ref2]: imagenes/Aspose.Words.027368b5-86a4-4210-ba33-f0d89769ea65.015.png
